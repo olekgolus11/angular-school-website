@@ -6,12 +6,11 @@
 
   .topbar
   {
-    display: flex;
     background: #d10d25;
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 110px;
     color: white;
   }
 
@@ -19,14 +18,45 @@
   {
     margin-top: auto;
     margin-bottom: auto;
-    font-weight: bolder;
+    font-size: 32px;
   }
 
 </style>
+
 <div class="topbar">
-  <img style="width: 70px; margin-left: 10%" src="../assets/blood_icon.png" alt="bloodicon">
-  <p class="topbarText">About us</p>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-1">
+        <img src="assets/blood_icon.png" alt="icon" style="height: 110px">
+      </div>
+      <div class="col-2">
+        <span class="topbarText">
+          about us
+        </span>
+      </div>
+      <div class="col-1">
+        <span class="topbarText">
+          |
+        </span>
+      </div>
+      <div class="col">
+        <span class="topbarText">
+          can i donate?
+        </span>
+      </div>
+      <div class="col">
+        <span class="topbarText">
+          where to donate?
+        </span>
+      </div>
+      <div class="col-2">
+        <span class="topbarText">
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
+
 <div class="container" style="margin-top: 100px">
   <div class="row">
     <div class="col-5">
