@@ -3,3 +3,7 @@
   font-family: "Gilroy Light";
   src: local("Gilroy Light"), url(./assets/fonts/Gilroy-Light.otf) format("truetype");
 }
+:root
+{
+  --main-red: #d10d25;
+}

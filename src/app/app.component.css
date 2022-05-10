@@ -1,8 +1,10 @@
-h1, h2, h3, h4, h5, h6, span, p, div {
+h1, h2, h3, h4, h5, h6, span, p, div
+{
   font-family: "Gilroy Light", 'DINPro-Medium', serif;
 }
 
-.banner {
+.banner
+{
   height: 100vh;
   width: 100%;
   background: url("../assets/wwwblood.png");
@@ -10,42 +12,135 @@ h1, h2, h3, h4, h5, h6, span, p, div {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.nav-link
+{
+  border-radius: 10px;
+}
+
+li .nav-link:hover
+{
+  background-color: #99091a;
+}
+
+li .nav-link:active
+{
+  background-color: #e60e27;
+  transition: all 0.05s;
+}
+
+#FindOutMore:hover
+{
+  margin-left: 10px;
+  transition: 1s;
+}
+#FindOutMore:hover:after
+{
+  margin-left: 0;
+  transition: 1s;
+}
+
 .doNationMain
 {
   font-weight: bolder;
   font-size: clamp(40px, 9vw, 120px);
 }
+
 #doNationContainer
 {
   margin-top: 30vh;
 }
+
 #InfoMainPage
 {
   color: white;
   font-weight: bold;
-  font-size: clamp(7px, 3vw, 20px);
+  font-size: clamp(10px, 1.5vw, 20px);
 }
+
 #AboutUsNumbers
 {
   font-size: clamp(20px, 6vw, 30px);
   background: url("../assets/wwwblood.png");
+  background-size: cover;
   padding: 20px 20px;
   margin-right: 0;
 }
+
 .BloodBanks
 {
-  background-color: #d10d25;
   height: 200px;
   border-style: solid;
   border-left: black;
-  border-top: black;
   border-right: black;
 }
+
+/*ALL BLOODBANKS*/
+#BB1
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 20%, white 20%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB2
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 30%, white 30%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB3
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 60%, white 60%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB4
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 40%, white 40%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB5
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 70%, white 70%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB6
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 80%, white 80%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB7
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 50%, white 50%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+#BB8
+{
+  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 20%, white 20%, white 100%);
+  background-color: #f3eaea;
+  background-blend-mode: darken;
+}
+
+/*ALL BLOODBANKS*/
+
+
 .BloodBanks2Container
 {
   width: clamp(80px, 8vw, 100px);
   margin: 5px;
 }
+
 .BloodTypetext
 {
   font-size: clamp(15px, 2vw, 20px);

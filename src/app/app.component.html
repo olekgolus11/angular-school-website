@@ -1,17 +1,16 @@
 <!---->
 <!--HEADER-->
 <!---->
-<nav class="navbar navbar-expand-lg fixed-top" style="background: #d10d25">
-  <div class="container offset-2" style="margin-right: 15.6666667%">
+<nav class="navbar navbar-expand-lg fixed-top" style="background: var(--main-red)">
+  <div class="container offset-2" >
     <a class="navbar-brand">
       <img src="assets/blood_iconvanilla.png" alt="" style="height: 30px">
       <a class="nav-link d-inline" style="color: white; font-weight: bold; margin-left: 10px"
          href="#NaviMainPage">doNation</a>
     </a>
     <!--    TOGGLER-->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavToggle"
-            aria-controls="navbarNavToggle" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button style="border-style: solid; border-color: #f39797; border-width: 1px; border-radius: 5px" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavToggle" aria-controls="navbarNavToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <img src="assets/whiteburger.png" style="width: 30px; height: 25px;" alt="menu">
     </button>
     <!--    CONTENT-->
     <div class="collapse navbar-collapse" id="navbarNavToggle">
@@ -43,9 +42,9 @@
     <div class="col-sm-5">
       <div id="doNationContainer"></div>
       <span class="doNationMain" style="color:white">do</span>
-      <span class="doNationMain" style="color: #d10d25">Nation</span><br>
+      <span class="doNationMain" style="color: var(--main-red)">Nation</span><br>
       <span id="InfoMainPage">Blood is a cure, that cannot be created like the medicine we know, thus our site unites people who are eager to help, to make sure that no one will run short of it when it's needed.</span><br><br><br>
-      <a class="nav-link" style="color: white; padding: 0;  font-size: clamp(10px, 3vw, 20px);" aria-current="page" href="#NaviAboutUs">Find out more ↓</a>
+      <a id="FindOutMore" class="nav-link" style="color: white; padding: 0;  font-size: clamp(10px, 3vw, 20px);" aria-current="page" href="#NaviAboutUs">Find out more ↓</a>
     </div>
   </div>
 </div>
@@ -64,14 +63,14 @@
 <div id="AboutUsNumbers" class="row text-center">
   <div class="col-sm-4" style="color: white">
     <span style="font-weight: bold">We helped</span><br><span
-    style="color: #d10d25">32658</span><br>people
+    style="color: var(--main-red)">32658</span><br>people
   </div>
   <div class="col-sm-4" style="color: white">
     <span style="font-weight: bold">We gathered</span><br><span
-    style="color: #d10d25">11032</span><br>liters
+    style="color: var(--main-red)">11032</span><br>liters
   </div>
   <div class="col-sm-4" style="color: white">
-    <span style="font-weight: bold">We unite</span><br><span style="color: #d10d25">2120</span><br>donators
+    <span style="font-weight: bold">We unite</span><br><span style="color: var(--main-red)">2120</span><br>donators
   </div>
 </div>
 <br>
@@ -86,11 +85,11 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB1"></div>
               <span class="BloodTypetext">A Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB2"></div>
               <span class="BloodTypetext">A Rh-</span>
             </div>
           </div>
@@ -98,11 +97,11 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB3"></div>
               <span class="BloodTypetext">B Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB4"></div>
               <span class="BloodTypetext">B Rh-</span>
             </div>
           </div>
@@ -114,11 +113,11 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB5"></div>
               <span class="BloodTypetext">AB Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB6"></div>
               <span class="BloodTypetext">AB Rh-</span>
             </div>
           </div>
@@ -126,11 +125,11 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB7"></div>
               <span class="BloodTypetext">0 Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks"></div>
+              <div class="BloodBanks" id="BB8"></div>
               <span class="BloodTypetext">0 Rh-</span>
             </div>
           </div>
