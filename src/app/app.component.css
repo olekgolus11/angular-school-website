@@ -50,7 +50,7 @@ li .nav-link:active
 .doNationMain
 {
   font-weight: bolder;
-  font-size: clamp(40px, 8vw, 140px);
+  font-size: clamp(40px, 8vw, 150px);
 }
 
 #doNationContainer
@@ -62,7 +62,7 @@ li .nav-link:active
 {
   color: white;
   font-weight: bold;
-  font-size: clamp(10px, 4vw, 20px);
+  font-size: clamp(10px, 1.5vw, 25px);
 }
 #InfoAboutUs
 {
