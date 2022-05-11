@@ -50,12 +50,12 @@ li .nav-link:active
 .doNationMain
 {
   font-weight: bolder;
-  font-size: clamp(40px, 8vw, 120px);
+  font-size: clamp(40px, 8vw, 140px);
 }
 
 #doNationContainer
 {
-  margin-top: clamp(30px, 25vh, 140px);
+  margin-top: clamp(30px, 25vh, 50vw);
 }
 
 #InfoMainPage
