@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, span, p, div
 .nav-link
 {
   border-radius: 10px;
+  font-size: max(.9vw, 1.6vh);
 }
 
 li .nav-link:hover
@@ -28,15 +29,19 @@ li .nav-link:active
   background-color: #e60e27;
   transition: all 0.05s;
 }
+#FindOutMore
+{
+  color: white;
+  padding: 0;
+  font-size: clamp(10px, 3vw, 20px);
+  display: inline;
+  transition: 1s;
+}
 
 #FindOutMore:hover
 {
   margin-left: 10px;
-  transition: 1s;
-}
-#FindOutMore:hover:after
-{
-  margin-left: 0;
+  color: var(--main-red);
   transition: 1s;
 }
 
@@ -182,4 +187,12 @@ li .nav-link:active
   {
     width: 70vw;
   }
+}
+#MapContainer
+{
+  padding-top: 4vw;
+  background: url("../assets/bg2.png");
+  background-position: left;
+  background-size: 150%;
+  background-repeat: no-repeat;
 }
