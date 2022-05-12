@@ -13,13 +13,6 @@ h1, h2, h3, h4, h5, h6, span, p, div
   background-repeat: no-repeat;
 }
 
-@media (max-width: 800px)
-{
-  .banner{
-    background-position: center;
-  }
-}
-
 .nav-link
 {
   border-radius: 10px;
@@ -166,8 +159,27 @@ li .nav-link:active
 .City
 {
   font-size: clamp(10px, 5vw, 30px);
+  font-weight: bold;
 }
-.PolandMap
+
+#PolandMap
 {
-  width: 30vw;
+  width: 25vw;
+  margin-bottom: 5vw;
+}
+
+
+@media (max-width: 800px)
+{
+  .banner{
+    background-position: center;
+  }
+  #CitiesColumn
+  {
+    text-align: center;
+  }
+  #PolandMap
+  {
+    width: 70vw;
+  }
 }

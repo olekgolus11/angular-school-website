@@ -2,7 +2,7 @@
 <!--HEADER-->
 <!---->
 <nav class="navbar navbar-expand-lg fixed-top" style="background: var(--main-red)">
-  <div class="container offset-2" >
+  <div class="container-fluid" style="margin-left: 16vw; margin-right: 16vw">
     <a class="navbar-brand">
       <img src="assets/blood_iconvanilla.png" alt="" style="height: 30px">
       <a class="nav-link d-inline" style="color: white; font-weight: bold; margin-left: 10px"
@@ -19,7 +19,7 @@
           <a class="nav-link" style="color: white" aria-current="page" href="#NaviAboutUs">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: white" aria-current="page" href="#">Where? & When?</a>
+          <a class="nav-link" style="color: white" aria-current="page" href="#NaviWhereWhen">Where? & When?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="color: white" aria-current="page" href="#">Requirements</a>
@@ -32,7 +32,7 @@
   </div>
 </nav>
 <!---->
-<!--MAIN PAGdE-->
+<!--MAIN PAGE-->
 <!---->
 <div class="container-fluid banner" id="NaviMainPage">
   <div class="row offset-2" style="padding-right: 16.666666%">
@@ -135,18 +135,18 @@
     </div>
   </div>
 </div>
-<br><br>
+<br><br id="NaviWhereWhen">
 <!---->
 <!--Where & When-->
 <!---->
 <div class="text-center container">
-  <span class="Header">Where and where?</span><br><br>
+  <span class="Header">Where and when?</span><br><br>
   <div class="row row-cols-sm-2">
     <div class="col-sm-6">
-      <img src="https://drukant.pl/images/wzory/M_Mapy/M003_70_N.png">
+      <img src="https://drukant.pl/images/wzory/M_Mapy/M003_70_N.png" id="PolandMap">
     </div>
     <div class="col-sm-6 text-start align-items-center">
-      <div class="row row-cols-2">
+      <div class="row row-cols-2" id="CitiesColumn">
         <div class="col"> <!--First col-->
           <div class="CityInfo">
             <span class="City">Warsaw</span><br>
