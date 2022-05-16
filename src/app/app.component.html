@@ -24,7 +24,7 @@
           <a class="nav-link" style="color: white" aria-current="page" href="#NaviWhereWhen">Where? & When?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: white" aria-current="page" href="#">Requirements</a>
+          <a class="nav-link" style="color: white" aria-current="page" href="#NaviRequirements">Requirements</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" style="color: white; font-weight: bold" aria-current="page" href="#">Donate</a>
@@ -37,13 +37,15 @@
 <!--MAIN PAGE-->
 <!---->
 <div class="container-fluid banner" id="NaviMainPage">
-  <div class="row offset-2" style="padding-right: 16.666666%">
-    <div class="col-sm-5">
-      <div id="doNationContainer"></div>
-      <span class="doNationMain" style="color:white">do</span>
-      <span class="doNationMain" style="color: var(--main-red)">Nation</span><br>
-      <span id="InfoMainPage">Blood is a cure, that cannot be created like the medicine we know, thus our site unites people who are eager to help, to make sure that no one will run short of it when it's needed.</span><br><br><br>
-      <a id="FindOutMore" class="nav-link" aria-current="page" href="#NaviAboutUs">Find out more ↓</a>
+  <div id="whiteFade">
+    <div class="row offset-2" style="padding-right: 16.666666%">
+      <div class="col-sm-5">
+        <div id="doNationContainer"></div>
+        <span class="doNationMain fadeIn" style="color:white">do</span>
+        <span class="doNationMain fadeIn" style="color: var(--main-red)">Nation</span><br>
+        <span id="InfoMainPage" class="fadeIn2">Are you willing to help? Donate blood, save a life.</span><br><br><br>
+        <a id="FindOutMore" class="nav-link fadeIn2" aria-current="page" href="#NaviAboutUs">Find out more ↓</a>
+      </div>
     </div>
   </div>
 </div>
@@ -60,23 +62,23 @@
 <!--NUMBERS-->
 <!---->
 <div id="AboutUsNumbers" class="row text-center">
-  <div class="col-sm-4" style="color: white">
+  <div class="col-sm-4" style="color: white; text-shadow: 1px 1px 1px black">
     <span style="font-weight: bold">We helped</span><br><span
-    style="color: var(--main-red)">32658</span><br>people
+    style="color: var(--main-red); text-shadow: none; font-weight: bolder">32658</span><br>people
   </div>
-  <div class="col-sm-4" style="color: white">
+  <div class="col-sm-4" style="color: white; text-shadow: 1px 1px 1px black">
     <span style="font-weight: bold">We gathered</span><br><span
-    style="color: var(--main-red)">11032</span><br>liters
+    style="color: var(--main-red); text-shadow: none; font-weight: bolder">11032</span><br>liters
   </div>
-  <div class="col-sm-4" style="color: white">
-    <span style="font-weight: bold">We unite</span><br><span style="color: var(--main-red)">2120</span><br>donators
+  <div class="col-sm-4" style="color: white; text-shadow: 1px 1px 1px black">
+    <span style="font-weight: bold">We unite</span><br><span style="color: var(--main-red); text-shadow: none; font-weight: bolder">2120</span><br>donators
   </div>
 </div>
 <br>
 <!---->
 <!--BLOODBANK-->
 <!---->
-<div class="text-center container">
+<div class="text-center container testasd">
   <span style="font-size: 40px">Our blood bank:</span><br><br>
   <div class="row">
     <div class="col-sm-6">
@@ -84,11 +86,15 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB1"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB1"></div>
+              </div>
               <span class="BloodTypetext">A Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB2"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB2"></div>
+              </div>
               <span class="BloodTypetext">A Rh-</span>
             </div>
           </div>
@@ -96,11 +102,15 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB3"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB3"></div>
+              </div>
               <span class="BloodTypetext">B Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB4"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB4"></div>
+              </div>
               <span class="BloodTypetext">B Rh-</span>
             </div>
           </div>
@@ -112,11 +122,15 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB5"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB5"></div>
+              </div>
               <span class="BloodTypetext">AB Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB6"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB6"></div>
+              </div>
               <span class="BloodTypetext">AB Rh-</span>
             </div>
           </div>
@@ -124,11 +138,15 @@
         <div class="col-6">
           <div class="row row-cols-2 justify-content-center">
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB7"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB7"></div>
+              </div>
               <span class="BloodTypetext">0 Rh+</span>
             </div>
             <div class="col-6 BloodBanks2Container">
-              <div class="BloodBanks" id="BB8"></div>
+              <div class="BloodBanks" style="background: var(--main-red); height: 100%">
+                <div id="BB8"></div>
+              </div>
               <span class="BloodTypetext">0 Rh-</span>
             </div>
           </div>
@@ -137,15 +155,15 @@
     </div>
   </div>
 </div>
-<br><br id="NaviWhereWhen">
+<br id="NaviWhereWhen"><br>
 <!---->
 <!--Where & When-->
 <!---->
-<span class="Header text-center d-block">Where and when?</span><br><br>
+<span class="Header text-center d-block">Where and when?</span><br>
 <section id="MapContainer" style="color:white">
   <div class="text-center container">
     <div class="row row-cols-sm-2">
-      <div class="col-sm-6">
+      <div class="col-sm-6" id="SmallerMapContainer">
         <img src="./assets/mapa.png" id="PolandMap">
       </div>
       <div class="col-sm-6 text-start align-items-center">
@@ -153,39 +171,39 @@
           <div class="col"> <!--First col-->
             <div class="CityInfo">
               <span class="City">Warsaw</span><br>
-              <span>Every Tuesday 6:00 - 11:00</span><br>
-              <span>ul. Batorego 37</span>
+              <span class="BelowCity">Every Tuesday 6:00 - 11:00</span><br>
+              <span class="BelowCity">ul. Batorego 37</span>
             </div>
             <br>
             <div class="CityInfo">
               <span class="City">Lodz</span><br>
-              <span>Every Thursday 6:00 - 12:00</span><br>
-              <span>ul. Piotrkowska 217</span>
+              <span class="BelowCity">Every Thursday 6:00 - 12:00</span><br>
+              <span class="BelowCity">ul. Piotrkowska 217</span>
             </div>
             <br>
             <div class="CityInfo">
               <span class="City">Cracow</span><br>
-              <span>Every Tuesday 6:00 - 12:00</span><br>
-              <span>ul. Bracka 4</span>
+              <span class="BelowCity">Every Tuesday 6:00 - 12:00</span><br>
+              <span class="BelowCity">ul. Bracka 4</span>
             </div>
           </div>
           <div class="col">
             <div class="CityInfo">
               <span class="City">Gdansk</span><br>
-              <span>Every Tuesday 6:00 - 12:00</span><br>
-              <span>ul. Długa 25</span>
+              <span class="BelowCity">Every Tuesday 6:00 - 12:00</span><br>
+              <span class="BelowCity">ul. Długa 25</span>
             </div>
             <br>
             <div class="CityInfo">
               <span class="City">Poznan</span><br>
-              <span>Every Thursday 6:00 - 12:00</span><br>
-              <span>ul. Przybyszewskiego 49</span>
+              <span class="BelowCity">Every Thursday 6:00 - 12:00</span><br>
+              <span class="BelowCity">ul. Przybyszewskiego 49</span>
             </div>
             <br>
             <div class="CityInfo">
               <span class="City">Torun</span><br>
-              <span>Every Wednesday 6:00 - 11:00</span><br>
-              <span>ul. Przedzamcze 8</span>
+              <span class="BelowCity">Every Wednesday 6:00 - 11:00</span><br>
+              <span class="BelowCity">ul. Przedzamcze 8</span>
             </div>
           </div>
         </div>
@@ -193,3 +211,9 @@
     </div>
   </div>
 </section>
+<!---->
+<!--Requirements-->
+<!---->
+<br id="NaviRequirements">
+<span class="Header text-center d-block">Requirements</span><br>
+

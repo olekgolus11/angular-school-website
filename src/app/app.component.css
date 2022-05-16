@@ -1,198 +1,263 @@
-h1, h2, h3, h4, h5, h6, span, p, div
-{
+h1, h2, h3, h4, h5, h6, span, p, div {
   font-family: "Gilroy Light", 'DINPro-Medium', serif;
 }
 
-.banner
+.navbar
 {
+  top: -70px;
+  animation: navbarSlide 2s 3s 1 ease forwards;
+}
+
+.banner {
   height: 100vh;
   width: 100%;
-  background: url("../assets/wwwblood.png");
+  background: url("../assets/givingheart1wider.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.nav-link
+#whiteFade
 {
-  border-radius: 10px;
-  font-size: max(.9vw, 1.6vh);
+  background: var(--main-blue);
+  height: 100vh;
+  width: 100%;
+  animation: whiteFade 3s 3s 1 ease forwards;
 }
 
-li .nav-link:hover
-{
+.nav-link {
+  border-radius: 10px;
+  font-size: max(1vw, 2.5vh);
+}
+
+li .nav-link:hover {
   background-color: #99091a;
 }
 
-li .nav-link:active
-{
+li .nav-link:active {
   background-color: #e60e27;
   transition: all 0.05s;
 }
-#FindOutMore
-{
+
+#FindOutMore {
+  background-color: var(--main-red);
+  padding: 10px 15px;
+  width: max-content;
+  border-radius: 25px;
+  opacity: 0;
   color: white;
-  padding: 0;
   font-size: clamp(10px, 3vw, 20px);
-  display: inline;
+  display: block;
   transition: 1s;
 }
 
-#FindOutMore:hover
-{
-  margin-left: 10px;
+#FindOutMore:hover {
+  background-color: white;
   color: var(--main-red);
+  font-weight: bold;
+  margin-left: 10px;
   transition: 1s;
 }
 
-.doNationMain
-{
+.doNationMain {
+  opacity: 0;
   font-weight: bolder;
   font-size: clamp(40px, 8vw, 150px);
+  text-shadow: 1px 1px 2px black;
 }
 
-#doNationContainer
-{
+#doNationContainer {
   margin-top: clamp(30px, 25vh, 50vw);
 }
 
-#InfoMainPage
-{
+#InfoMainPage {
+  opacity: 0;
   color: white;
   font-weight: bold;
-  font-size: clamp(10px, 1.5vw, 25px);
+  font-size: clamp(15px, 1.5vw, 35px);
+  text-shadow: 1px 1px 2px black;
 }
-.Header
-{
+
+.Header {
   font-size: clamp(50px, 8.5vw, 80px);
   font-weight: bold;
 }
-.AfterHeader
-{
+
+.AfterHeader {
   font-size: clamp(10px, 5vw, 30px);
 }
 
-#AboutUsNumbers
-{
+#AboutUsNumbers {
   font-size: clamp(20px, 6vw, 30px);
-  background: url("../assets/wwwblood.png");
-  background-size: cover;
-  background-position: bottom;
+  background: var(--main-blue);
   padding: 20px 20px;
   margin-right: 0;
 }
 
-.BloodBanks
-{
-  height: 200px;
+.BloodBanks {
   border-style: solid;
   border-left: black;
   border-right: black;
 }
 
 /*ALL BLOODBANKS*/
-#BB1
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 20%, white 20%, white 100%);
+#BB1 {
+  height: 40%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB2
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 30%, white 30%, white 100%);
+#BB2 {
+  height: 70%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB3
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 60%, white 60%, white 100%);
+#BB3 {
+  height: 40%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB4
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 40%, white 40%, white 100%);
+#BB4 {
+  height: 60%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB5
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 70%, white 70%, white 100%);
+#BB5 {
+  height: 30%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB6
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 80%, white 80%, white 100%);
+#BB6 {
+  height: 20%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB7
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 50%, white 50%, white 100%);
+#BB7 {
+  height: 50%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
-#BB8
-{
-  background: linear-gradient(0deg, var(--main-red) 0%, var(--main-red) 20%, white 20%, white 100%);
+#BB8 {
+  height: 80%;
   background-color: #f3eaea;
-  background-blend-mode: darken;
 }
 
 /*ALL BLOODBANKS*/
 
 
-.BloodBanks2Container
-{
+.BloodBanks2Container {
   width: clamp(80px, 8vw, 100px);
+  height: 200px;
   margin: 5px;
+  margin-bottom: 25px;
 }
 
-.BloodTypetext
-{
+.BloodTypetext {
   font-size: clamp(15px, 2vw, 20px);
 }
 
-.City
-{
+.City {
+  color: var(--main-red);
   font-size: clamp(10px, 5vw, 30px);
   font-weight: bold;
 }
 
-#PolandMap
-{
+#PolandMap {
   width: 25vw;
-  margin-bottom: 5vw;
+  height: 25vw;
+  vertical-align: middle;
 }
 
-
-@media (max-width: 800px)
+#MapContainer {
+  padding-top: 4vw;
+  /*background: url("https://media.istockphoto.com/photos/heart-in-the-hands-of-a-doctor-on-a-colored-banner-background-picture-id1329468338?s=2048x2048");*/
+  /*background-size: cover;*/
+  /*background-position: right;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100%;*/
+  background: var(--main-blue);
+  width: 100%;
+  padding-bottom: 4vw;
+}
+.BelowCity
 {
-  .banner{
-    background-position: center;
-  }
-  #CitiesColumn
+  font-size: clamp(8px, 4vw, 16px);
+}
+#SmallerMapContainer
+{
+  margin: auto;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.fadeIn
+{
+  animation: FadeIn 3s .5s 1 ease forwards;
+}
+.fadeIn2
+{
+  animation: FadeIn 4s 1.5s 1 ease forwards;
+}
+
+@media (max-width: 800px) {
+  #AboutUsNumbers
   {
+    background: url("../assets/bg1.png");
+    background-position: right;
+  }
+
+  .banner {
+    background: url("../assets/givingheart1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #CitiesColumn {
     text-align: center;
   }
-  #PolandMap
-  {
+
+  #PolandMap {
     width: 70vw;
+    height: 70vw;
+  }
+
+  #MapContainer
+  {
+    background-size: 500%;
+    background-position: right;
+  }
+  #SmallerMapContainer
+  {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
   }
 }
-#MapContainer
-{
-  padding-top: 4vw;
-  background: url("../assets/bg2.png");
-  background-position: left;
-  background-size: 150%;
-  background-repeat: no-repeat;
+
+@keyframes navbarSlide {
+  0%
+  {
+    top: -70px;
+  }
+  100%
+  {
+    top: 0px;
+  }
+}
+@keyframes FadeIn {
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+@keyframes whiteFade {
+  0%
+  {
+    background: var(--main-blue);
+  }
+  100%
+  {
+    background: rgba(0,0,0,0%);
+  }
 }
