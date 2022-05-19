@@ -47,7 +47,7 @@ li .nav-link:active {
   color: white;
   font-size: clamp(10px, 3vw, 20px);
   display: block;
-  transition: 1s;
+  transition: .5s;
 }
 
 #FindOutMore:hover {
@@ -55,7 +55,7 @@ li .nav-link:active {
   color: var(--main-red);
   font-weight: bold;
   margin-left: 10px;
-  transition: 1s;
+  transition: .5s;
 }
 
 .doNationMain {
@@ -94,6 +94,7 @@ li .nav-link:active {
 }
 
 .BloodBanks {
+  background: var(--main-red); height: 100%;
   border-style: solid;
   border-left: black;
   border-right: black;
@@ -138,6 +139,17 @@ li .nav-link:active {
 #BB8 {
   height: 80%;
   background-color: #f3eaea;
+}
+
+.BloodBanksInner
+{
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.BloodBanksInnerVisible
+{
+  transform: scaleY(1);
+  transition: 2s;
 }
 
 /*ALL BLOODBANKS*/
