@@ -2,8 +2,7 @@ h1, h2, h3, h4, h5, h6, span, p, div {
   font-family: "Gilroy Light", 'DINPro-Medium', serif;
 }
 
-.navbar
-{
+.navbar {
   top: -70px;
   animation: navbarSlide 2s 3s 1 ease forwards;
 }
@@ -16,8 +15,8 @@ h1, h2, h3, h4, h5, h6, span, p, div {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#whiteFade
-{
+
+#whiteFade {
   background: var(--main-blue);
   height: 100vh;
   width: 100%;
@@ -94,7 +93,8 @@ li .nav-link:active {
 }
 
 .BloodBanks {
-  background: var(--main-red); height: 100%;
+  background: var(--main-red);
+  height: 100%;
   border-style: solid;
   border-left: black;
   border-right: black;
@@ -141,13 +141,12 @@ li .nav-link:active {
   background-color: #f3eaea;
 }
 
-.BloodBanksInner
-{
+.BloodBanksInner {
   transform: scaleY(0);
   transform-origin: top;
 }
-.BloodBanksInnerVisible
-{
+
+.BloodBanksInnerVisible {
   transform: scaleY(1);
   transition: 2s;
 }
@@ -173,8 +172,7 @@ li .nav-link:active {
 }
 
 #PolandMap {
-  width: 25vw;
-  height: 25vw;
+  width: 35vw;
   vertical-align: middle;
 }
 
@@ -189,33 +187,94 @@ li .nav-link:active {
   width: 100%;
   padding-bottom: 4vw;
 }
-.BelowCity
-{
+
+.BelowCity {
   font-size: clamp(8px, 4vw, 16px);
+  text-shadow: 1px 1px 2px black;
 }
-#SmallerMapContainer
-{
+
+#SmallerMapContainer {
   margin: auto;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-.fadeIn
-{
+
+.fadeIn {
   animation: FadeIn 3s .5s 1 ease forwards;
 }
-.fadeIn2
-{
+
+.fadeIn2 {
   animation: FadeIn 4s 1.5s 1 ease forwards;
 }
 
-@media (max-width: 800px) {
-  #AboutUsNumbers
-  {
-    background: url("../assets/bg1.png");
-    background-position: right;
-  }
+.mainCategory {
+  color: var(--main-red);
+  font-size: clamp(20px, 6vw, 50px);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 3vh;
+}
 
+.Category {
+  color: black;
+  font-size: clamp(20px, 5vw, 40px);
+  font-weight: bold;
+}
+
+.Description {
+  font-size: clamp(10px, 3vw, 20px);
+}
+
+#Form {
+  padding: 0 10vw;
+}
+
+#genders {
+  display: flex;
+  flex-direction: row;
+}
+
+#GenMan, #GenWoman, #GenPNTS {
+  margin-left: 2vw;
+  margin-right: 2px;
+}
+
+.inputType {
+  font-size: clamp(10px, 3vw, 20px);
+  font-weight: bold;
+}
+
+.inputCont {
+  display: block;
+  padding: 5px;
+  width: 20vw;
+  border-color: black;
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.inputCont:hover, .inputCont:focus {
+  border-color: var(--main-red);
+}
+
+#submit {
+  margin-top: 2vh;
+  background-color: var(--main-red);
+  width: 40vw;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  border-width: 0;
+}
+
+.input-box {
+  margin-top: 2vh;
+  padding-left: 2vw;
+}
+
+@media (max-width: 800px) {
   .banner {
     background: url("../assets/givingheart1.jpg");
     background-position: center;
@@ -227,49 +286,43 @@ li .nav-link:active {
   }
 
   #PolandMap {
-    width: 70vw;
-    height: 70vw;
+    width: 90vw;
   }
 
-  #MapContainer
-  {
+  #MapContainer {
     background-size: 500%;
     background-position: right;
   }
-  #SmallerMapContainer
-  {
+
+  #SmallerMapContainer {
     margin-top: 6vh;
     margin-bottom: 6vh;
   }
 }
 
 @keyframes navbarSlide {
-  0%
-  {
+  0% {
     top: -70px;
   }
-  100%
-  {
+  100% {
     top: 0px;
   }
 }
+
 @keyframes FadeIn {
-  0%
-  {
+  0% {
     opacity: 0;
   }
-  100%
-  {
+  100% {
     opacity: 1;
   }
 }
+
 @keyframes whiteFade {
-  0%
-  {
+  0% {
     background: var(--main-blue);
   }
-  100%
-  {
-    background: rgba(0,0,0,0%);
+  100% {
+    background: rgba(0, 0, 0, 0%);
   }
 }

@@ -27,7 +27,7 @@
           <a class="nav-link" style="color: white" aria-current="page" href="#NaviRequirements">Requirements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: white; font-weight: bold" aria-current="page" href="#">Donate</a>
+          <a class="nav-link" style="color: white; font-weight: bold" aria-current="page" href="#NaviDonate">Donate</a>
         </li>
       </ul>
     </div>
@@ -71,7 +71,8 @@
     style="color: var(--main-red); text-shadow: none; font-weight: bolder">11032</span><br>liters
   </div>
   <div class="col-sm-4" style="color: white; text-shadow: 1px 1px 1px black">
-    <span style="font-weight: bold">We unite</span><br><span style="color: var(--main-red); text-shadow: none; font-weight: bolder">2120</span><br>donators
+    <span style="font-weight: bold">We unite</span><br><span
+    style="color: var(--main-red); text-shadow: none; font-weight: bolder">2120</span><br>donators
   </div>
 </div>
 <br>
@@ -164,7 +165,7 @@
   <div class="text-center container">
     <div class="row row-cols-sm-2">
       <div class="col-sm-6" id="SmallerMapContainer">
-        <img src="./assets/mapa.png" id="PolandMap">
+        <img src="./assets/mapa3d2markingsSS.png" id="PolandMap">
       </div>
       <div class="col-sm-6 text-start align-items-center">
         <div class="row row-cols-2" id="CitiesColumn">
@@ -216,4 +217,133 @@
 <!---->
 <br id="NaviRequirements">
 <span class="Header text-center d-block">Requirements</span><br>
-
+<div class="container">
+  <span class="mainCategory text-center">Who can donate blood?</span>
+  <div class="row row-cols-sm-2">
+    <div class="col-sm-6">
+      <p class="Category">Age</p>
+      <p class="Description">You must be aged between 18 and 65 years old.</p>
+    </div>
+    <div class="col-sm-6">
+      <p class="Category">Weight</p>
+      <p class="Description">You must be over 50kg.</p>
+    </div>
+  </div>
+  <div class="row row-cols-sm-2">
+    <div class="col-sm-6">
+      <p class="Category">High Blood Pressure</p>
+      <p class="Description">Acceptable as long as your blood pressure is below 180 systolic (first number) and below
+        100 diastolic (second number) at the time of donation. Medications for high blood pressure do not disqualify you
+        from donating.</p>
+    </div>
+    <div class="col-sm-6">
+      <p class="Category">Body Piercing</p>
+      <p class="Description">You must not donate if you have had a tongue, nose, belly button or genital piercing in the
+        past 12 months. Donors with pierced ears are eligible.</p>
+    </div>
+  </div>
+  <div class="row row-cols-sm-2">
+    <div class="col-sm-6">
+      <p class="Category">Cold and Flu</p>
+      <p class="Description">Wait if you have a fever or a productive cough (bringing up phlegm). Wait if you do not
+        feel well on the day of donation. Wait until you have completed antibiotic treatment for sinus, throat or lung
+        infection.</p>
+    </div>
+    <div class="col-sm-6">
+      <p class="Category">Diabetes</p>
+      <p class="Description">Acceptable as long as it is well controlled, whether medication is taken or not.</p>
+    </div>
+  </div>
+  <span class="mainCategory text-center">What should you do & description of the process</span>
+  <div class="row row-cols-sm-2">
+    <div class="col-sm-6">
+      <p class="Category">Online part</p>
+      <ol class="Description">
+        <li>You are obliged to read all the requirements if you are looking forward to take part in blood donating</li>
+        <li>You have to register on our site in order to be qualified to the process</li>
+        <li>Check your mail to make sure, that your registration was done correctly</li>
+        <li>That's it!</li>
+      </ol>
+    </div>
+    <div class="col-sm-6">
+      <p class="Category">Donating part</p>
+      <ol class="Description">
+        <li>We recommend a small meal prior to donation. It could be a sandwich.</li>
+        <li>Drink a lot of water.</li>
+        <li>Go to the adress that you chose with your identity card.</li>
+        <li>Fill out a questionnaire, which then will be checked and verified by a nurse.</li>
+        <li>Next, a blood sample will be collected from your fingertip.</li>
+        <li>You will have an internal medicine examination and interview with a doctor.</li>
+        <li>If you are qualified, the last part is donating the blood.</li>
+        <li>Donating the blood (it lasts 5 - 7 minutes).</li>
+        <li>After donating the blood you will receive a chocolate and a juice.</li>
+        <li>You are now free to go. You may feel weak and sleepy, make sure that you go back home safely.</li>
+        <li>You can speed up the regenerating process by having carbohydrate diet this day.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!---->
+<!--FORM-->
+<!---->
+<br id="NaviDonate">
+<span class="Header text-center d-block">Donate!</span><br>
+<div class="container" id="Form">
+  <form action="#">
+    <div class="row row-cols-sm-2">
+      <div class="col-sm-6">
+        <div class="input-box">
+          <span class="inputType">Name</span>
+          <input class="inputCont" type="text" placeholder="Enter your name" required>
+        </div>
+      </div>
+      <div class="input-box">
+        <span class="inputType">Surname</span>
+        <input class="inputCont" type="text" placeholder="Enter your surname" required>
+      </div>
+    </div>
+    <div class="row row-cols-sm-2">
+      <div class="col-sm-6">
+        <div class="input-box">
+          <span class="inputType">Birthday</span>
+          <input class="inputCont" type="date" placeholder="When you were born?" required>
+        </div>
+      </div>
+      <div class="input-box">
+        <span class="inputType">Phone number</span>
+        <input class="inputCont" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required>
+      </div>
+    </div>
+    <div class="row row-cols-sm-2">
+      <div class="col-sm-6">
+        <div class="input-box">
+          <span class="inputType">Email</span>
+          <input class="inputCont" type="email" placeholder="Enter your email adress" required>
+        </div>
+      </div>
+      <div class="input-box">
+        <span class="inputType">Email</span>
+        <input class="inputCont" type="email" placeholder="Confirm your email adress" required>
+      </div>
+    </div>
+    <span class="inputType" style="display: block; margin-left: 2vw; margin-top: 2vh">Gender</span>
+    <div id="genders">
+      <div>
+        <input type="radio" id="GenMan">
+        <label for="GenMan">Man</label>
+      </div>
+      <div>
+        <input type="radio" id="GenWoman">
+        <label for="GenWoman">Woman</label>
+      </div>
+      <div>
+        <input type="radio" id="GenPNTS">
+        <label for="GenPNTS">Prefer not to say</label>
+      </div>
+    </div>
+    <div class="button text-center">
+      <input id="submit" type="submit" value="Register">
+    </div>
+  </form>
+</div>
+<br><br><br>
