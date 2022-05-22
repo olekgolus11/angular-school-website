@@ -217,6 +217,7 @@
 <!---->
 <br id="NaviRequirements">
 <span class="Header text-center d-block">Requirements</span><br>
+
 <div class="container">
   <span class="mainCategory text-center">Who can donate blood?</span>
   <div class="row row-cols-sm-2">
@@ -254,7 +255,7 @@
       <p class="Description">Acceptable as long as it is well controlled, whether medication is taken or not.</p>
     </div>
   </div>
-  <span class="mainCategory text-center">What should you do & description of the process</span>
+  <span class="mainCategory text-center">What you should do & description of the process</span>
   <div class="row row-cols-sm-2">
     <div class="col-sm-6">
       <p class="Category">Online part</p>
@@ -288,62 +289,60 @@
 <!---->
 <br id="NaviDonate">
 <span class="Header text-center d-block">Donate!</span><br>
-<div class="container" id="Form">
-  <form action="#">
-    <div class="row row-cols-sm-2">
-      <div class="col-sm-6">
-        <div class="input-box">
-          <span class="inputType">Name</span>
-          <input class="inputCont" type="text" placeholder="Enter your name" required>
+<div class="container-fluid" style="background: var(--main-blue)">
+  <br><br>
+  <div id="formContainer">
+    <form action="#">
+      <div class="row row-cols-sm-2">
+        <div class="col-sm-6">
+          <label for="formName" class="inputCategory">First Name</label>
+          <input class="inputBox" id="formName" type="text" placeholder="Enter your first name" required>
+        </div>
+        <div class="col-sm-6">
+          <label for="formSurname" class="inputCategory">Last Name</label>
+          <input class="inputBox" id="formSurname" type="text" placeholder="Enter your last name" required>
         </div>
       </div>
-      <div class="input-box">
-        <span class="inputType">Surname</span>
-        <input class="inputCont" type="text" placeholder="Enter your surname" required>
-      </div>
-    </div>
-    <div class="row row-cols-sm-2">
-      <div class="col-sm-6">
-        <div class="input-box">
-          <span class="inputType">Birthday</span>
-          <input class="inputCont" type="date" placeholder="When you were born?" required>
+      <div class="row row-cols-sm-2">
+        <div class="col-sm-6">
+          <label for="formBirth" class="inputCategory">Birthday</label>
+          <input class="inputBox" id="formBirth" type="date" required max="2005-01-01">
+        </div>
+        <div class="col-sm-6">
+          <label for="formPhone" class="inputCategory">Phone number</label>
+          <input class="inputBox" id="formPhone" type="tel" pattern="[0-9]{9}" placeholder="123-456-789" required>
         </div>
       </div>
-      <div class="input-box">
-        <span class="inputType">Phone number</span>
-        <input class="inputCont" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required>
-      </div>
-    </div>
-    <div class="row row-cols-sm-2">
-      <div class="col-sm-6">
-        <div class="input-box">
-          <span class="inputType">Email</span>
-          <input class="inputCont" type="email" placeholder="Enter your email adress" required>
+      <div class="row row-cols-sm-2">
+        <div class="col-sm-6">
+          <label for="formEmail" class="inputCategory">Email</label>
+          <input class="inputBox" id="formEmail" placeholder="Enter your email adress" type="email" required>
+        </div>
+        <div class="col-sm-6">
+          <label for="formEmail2" class="inputCategory">Confirm email</label>
+          <input class="inputBox" id="formEmail2" placeholder="Confirm your email adress" type="email" required>
         </div>
       </div>
-      <div class="input-box">
-        <span class="inputType">Email</span>
-        <input class="inputCont" type="email" placeholder="Confirm your email adress" required>
+      <div class="row row-cols-sm-2">
+        <div class="col-sm-6">
+          <label for="formGender" class="inputCategory">Gender</label>
+          <div id="formGender">
+            <input class="inputRadio" name="formGender" type="radio" id="formGenderMan">
+            <label class="inputRadioLabel" for="formGenderMan">Man</label>
+            <input class="inputRadio" name="formGender" type="radio" id="formGenderWoman">
+            <label class="inputRadioLabel" for="formGenderWoman">Woman</label>
+            <input class="inputRadio" name="formGender" type="radio" id="formGenderPNTS">
+            <label class="inputRadioLabel" for="formGenderPNTS">Prefer not to say</label>
+          </div>
+        </div>
       </div>
-    </div>
-    <span class="inputType" style="display: block; margin-left: 2vw; margin-top: 2vh">Gender</span>
-    <div id="genders">
-      <div>
-        <input type="radio" id="GenMan">
-        <label for="GenMan">Man</label>
+      <div style="display: flex">
+        <input id="submitButton" type="submit" value="Submit! →">
       </div>
-      <div>
-        <input type="radio" id="GenWoman">
-        <label for="GenWoman">Woman</label>
-      </div>
-      <div>
-        <input type="radio" id="GenPNTS">
-        <label for="GenPNTS">Prefer not to say</label>
-      </div>
-    </div>
-    <div class="button text-center">
-      <input id="submit" type="submit" value="Register">
-    </div>
-  </form>
+    </form>
+  </div>
+  <br><br>
 </div>
-<br><br><br>
+<br><br>  <br><br>
+
+
