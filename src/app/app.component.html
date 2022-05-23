@@ -55,7 +55,7 @@
 <br id="NaviAboutUs"><br>
 <div class="text-center container">
   <span class="Header">About us</span><br>
-  <span class="AfterHeader">We are a non-profit organization that provides blood donating service in cities across the Poland, including Warsaw, Lodz, Cracow and more.</span><br><br>
+  <span class="AfterHeader">We are a non-profit organization that provides blood donating service in cities across the Poland, including Warsaw, Lodz, Cracow and more. We share the collected blood among all hospitals in these cities, bringing help and joy to all the people, who need it.</span><br><br>
   <span style="font-size: clamp(20px, 7vw, 60px);">Since 2020:</span><br><br>
 </div>
 <!---->
@@ -218,7 +218,7 @@
 <br id="NaviRequirements">
 <span class="Header text-center d-block">Requirements</span><br>
 
-<div class="container">
+<div class="container text-center">
   <span class="mainCategory text-center">Who can donate blood?</span>
   <div class="row row-cols-sm-2">
     <div class="col-sm-6">
@@ -310,7 +310,7 @@
         </div>
         <div class="col-sm-6">
           <label for="formPhone" class="inputCategory">Phone number</label>
-          <input class="inputBox" id="formPhone" type="tel" pattern="[0-9]{9}" placeholder="123-456-789" required>
+          <input class="inputBox" id="formPhone" type="tel" pattern="[0-9]{9}" placeholder="123456789" required>
         </div>
       </div>
       <div class="row row-cols-sm-2">
@@ -325,9 +325,26 @@
       </div>
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
+          <label for="formCity" class="inputCategory">City</label>
+          <select class="inputBox" id="formCity" name="Cities" required>
+            <option value="warsaw">Warsaw</option>
+            <option value="lodz">Lodz</option>
+            <option value="cracow">Cracow</option>
+            <option value="gdansk">Gdansk</option>
+            <option value="poznan">Poznan</option>
+            <option value="torun">Torun</option>
+          </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="formDate" class="inputCategory">Select week</label>
+          <input class="inputBox" id="formDate" placeholder="Choose the week" type="week" required>
+        </div>
+      </div>
+      <div class="row row-cols-sm-2">
+        <div class="col-sm-6">
           <label for="formGender" class="inputCategory">Gender</label>
           <div id="formGender">
-            <input class="inputRadio" name="formGender" type="radio" id="formGenderMan">
+            <input class="inputRadio" name="formGender" type="radio" id="formGenderMan" required>
             <label class="inputRadioLabel" for="formGenderMan">Man</label>
             <input class="inputRadio" name="formGender" type="radio" id="formGenderWoman">
             <label class="inputRadioLabel" for="formGenderWoman">Woman</label>

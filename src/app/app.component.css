@@ -202,7 +202,7 @@ li .nav-link:active
 
 #PolandMap
 {
-  width: 30vw;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -262,6 +262,9 @@ li .nav-link:active
 .Description
 {
   font-size: clamp(10px, 3vw, 20px);
+  text-align: left;
+  border-style: solid;
+  border-color: white white var(--main-red) white;
 }
 
 .inputCategory

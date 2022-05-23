@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="assets/blood_icon32.png">
   <script>
-    var isChecked = undefined;
     document.addEventListener('scroll', reveal);
 
     function reveal()
@@ -18,7 +17,6 @@
       objectTop = reveals[0].getBoundingClientRect().top;
       if (objectTop < windowHeight - 200)
       {
-        isChecked = 1;
         for (var i = 0; i < reveals.length; i++)
         {
           reveals[i].classList.add("BloodBanksInnerVisible");
