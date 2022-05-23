@@ -326,13 +326,34 @@ li .nav-link:active
 
 @media (max-width: 800px)
 {
+  .nav-link
+  {
+    border-radius: 10px;
+    font-size: clamp(10px, 4vw, 20px);
+  }
   .banner
   {
     background: url("../assets/givingheart1.jpg");
-    background-position: center;
+    background-position: left;
     background-size: cover;
+    animation: bgSlide 2s 3s 1 ease forwards;
   }
-
+  #whiteFade
+  {
+    background: rgba(0, 0, 0, 0%);
+    animation: none;
+  }
+  .doNationMain
+  {
+    opacity: 0;
+    font-weight: bolder;
+    font-size: clamp(40px, 13vw, 200px);
+    text-shadow: 1px 1px 2px black;
+  }
+  #doNationContainer
+  {
+    margin-top: clamp(30px, 20vh, 50vw);
+  }
   #CitiesColumn
   {
     text-align: center;
@@ -362,6 +383,17 @@ li .nav-link:active
   {
     width: 70%;
     margin-bottom: 20px;
+  }
+  @keyframes bgSlide
+  {
+    0%
+    {
+      background-position: left;
+    }
+    100%
+    {
+      background-position: center;
+    }
   }
 }
 
