@@ -5,8 +5,7 @@
   <div class="container-fluid" style="margin-left: 16vw; margin-right: 16vw">
     <a class="navbar-brand">
       <img src="assets/blood_iconvanilla.png" alt="" style="height: 30px">
-      <a class="nav-link d-inline" style="color: white; font-weight: bold; margin-left: 10px"
-         href="#NaviMainPage">doNation</a>
+      <a class="nav-link d-inline" href="#NaviMainPage" id="naviHome">doNation</a>
     </a>
     <!--    TOGGLER-->
     <button style="border-style: solid; border-color: #f39797; border-width: 1px; border-radius: 5px"
@@ -221,36 +220,36 @@
 <div class="container text-center">
   <span class="mainCategory text-center">Who can donate blood?</span>
   <div class="row row-cols-sm-2">
-    <div class="col-sm-6">
+    <div class="col-sm-6 reqBox">
       <p class="Category">Age</p>
       <p class="Description">You must be aged between 18 and 65 years old.</p>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 reqBox">
       <p class="Category">Weight</p>
       <p class="Description">You must be over 50kg.</p>
     </div>
   </div>
   <div class="row row-cols-sm-2">
-    <div class="col-sm-6">
+    <div class="col-sm-6 reqBox">
       <p class="Category">High Blood Pressure</p>
       <p class="Description">Acceptable as long as your blood pressure is below 180 systolic (first number) and below
         100 diastolic (second number) at the time of donation. Medications for high blood pressure do not disqualify you
         from donating.</p>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 reqBox">
       <p class="Category">Body Piercing</p>
       <p class="Description">You must not donate if you have had a tongue, nose, belly button or genital piercing in the
         past 12 months. Donors with pierced ears are eligible.</p>
     </div>
   </div>
   <div class="row row-cols-sm-2">
-    <div class="col-sm-6">
+    <div class="col-sm-6 reqBox">
       <p class="Category">Cold and Flu</p>
       <p class="Description">Wait if you have a fever or a productive cough (bringing up phlegm). Wait if you do not
         feel well on the day of donation. Wait until you have completed antibiotic treatment for sinus, throat or lung
         infection.</p>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-6 reqBox">
       <p class="Category">Diabetes</p>
       <p class="Description">Acceptable as long as it is well controlled, whether medication is taken or not.</p>
     </div>
@@ -326,7 +325,8 @@
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formCity" class="inputCategory">City</label>
-          <select class="inputBox" id="formCity" name="Cities" required>
+          <select class="inputBox" id="formCity" name="Cities" value="none" required>
+            <option value="" selected disabled hidden>Select city</option>
             <option value="warsaw">Warsaw</option>
             <option value="lodz">Lodz</option>
             <option value="cracow">Cracow</option>
@@ -337,7 +337,7 @@
         </div>
         <div class="col-sm-6">
           <label for="formDate" class="inputCategory">Select week</label>
-          <input class="inputBox" id="formDate" placeholder="Choose the week" type="week" required>
+          <input class="inputBox" id="formDate" placeholder="Choose the week" type="week" min="2022-W05" required>
         </div>
       </div>
       <div class="row row-cols-sm-2">
@@ -348,8 +348,8 @@
             <label class="inputRadioLabel" for="formGenderMan">Man</label>
             <input class="inputRadio" name="formGender" type="radio" id="formGenderWoman">
             <label class="inputRadioLabel" for="formGenderWoman">Woman</label>
-            <input class="inputRadio" name="formGender" type="radio" id="formGenderPNTS">
-            <label class="inputRadioLabel" for="formGenderPNTS">Prefer not to say</label>
+            <input class="inputRadio" name="formGender" type="radio" id="formGenderOther">
+            <label class="inputRadioLabel" for="formGenderOther">Other</label>
           </div>
         </div>
       </div>
@@ -360,6 +360,18 @@
   </div>
   <br><br>
 </div>
-<br><br>  <br><br><br><br>
-
+<!---->
+<!--CONTACT-->
+<!---->
+<div style="background: var(--main-red); width: 100%">
+  <br>
+  <div class="container">
+    <p style="text-align: center; font-size: clamp(20px, 5vw, 40px); color: white; font-weight: bold">Any questions?</p>
+    <p class="contact">Feel free to ask!</p><br>
+    <div style="display: flex; flex-direction: column">
+      <span class="contact">Telephone: 723-453-355</span>
+      <span class="contact">E-mail: donation.support@gmail.com</span><br><br>
+    </div>
+  </div>
+</div>
 

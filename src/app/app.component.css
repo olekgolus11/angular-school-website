@@ -18,6 +18,18 @@ h1, h2, h3, h4, h5, h6, span, p, div
   background-size: cover;
   background-repeat: no-repeat;
 }
+#naviHome
+{
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: clamp(10px, 3vw, 20px);
+  border-radius: 10px;
+}
+#naviHome:hover
+{
+  background-color: #99091a;
+}
 
 #whiteFade
 {
@@ -27,7 +39,7 @@ h1, h2, h3, h4, h5, h6, span, p, div
   animation: whiteFade 3s 3s 1 ease forwards;
 }
 
-.nav-link
+li .nav-link
 {
   border-radius: 10px;
   font-size: clamp(10px, 3vw, 20px);
@@ -38,7 +50,7 @@ li .nav-link:hover
   background-color: #99091a;
 }
 
-li .nav-link:active
+.nav-link:active
 {
   background-color: #e60e27;
   transition: all 0.05s;
@@ -259,12 +271,16 @@ li .nav-link:active
   font-weight: bold;
 }
 
+.reqBox
+{
+  border-style: solid;
+  border-color: white white var(--main-red) white;
+}
+
 .Description
 {
   font-size: clamp(10px, 3vw, 20px);
   text-align: left;
-  border-style: solid;
-  border-color: white white var(--main-red) white;
 }
 
 .inputCategory
@@ -323,6 +339,18 @@ li .nav-link:active
 {
   margin-right: 15px;
 }
+#formBirth, #formDate
+{
+  cursor: text;
+}
+.contact
+{
+  margin: auto;
+  text-align: center;
+  font-size: clamp(10px, 3vw, 20px);
+  color: white;
+}
+
 
 @media (max-width: 800px)
 {
