@@ -23,6 +23,56 @@
         }
       }
     }
+
+    function setWeek(city)
+    {
+
+      let outputDate = document.getElementById("formDate");
+      outputDate.disabled = false;
+      outputDate.type = "date";
+      switch (city)
+      {
+        case "warsaw":
+        case "cracow":
+        case "gdansk":
+          outputDate.min = "2022-05-24";
+          break;
+        case "lodz":
+        case "poznan":
+          outputDate.min = "2022-05-26";
+          break;
+        case "torun":
+          outputDate.min = "2022-05-25";
+          break;
+      }
+    }
+
+    function setValue(value)
+    {
+      let doc = document.getElementById("formEmail");
+      doc.value = value;
+    }
+
+    function checkMail()
+    {
+      let initialMail = document.getElementById("formEmail");
+      let secondMail = document.getElementById("formEmail2");
+      let submitButton = document.getElementById("submitButton");
+      if ((initialMail.value).localeCompare(secondMail.value))
+      {
+        initialMail.style.borderColor = "red";
+        secondMail.style.borderColor = "red";
+        submitButton.disabled = true;
+        submitButton.value = "Emails don't match!";
+      }
+      else
+      {
+        initialMail.style.borderColor = "black";
+        secondMail.style.borderColor = "black";
+        submitButton.disabled = false;
+        submitButton.value = "Submit! →";
+      }
+    }
   </script>
 </head>
 <body>

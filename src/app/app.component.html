@@ -319,13 +319,13 @@
         </div>
         <div class="col-sm-6">
           <label for="formEmail2" class="inputCategory">Confirm email</label>
-          <input class="inputBox" id="formEmail2" placeholder="Confirm your email adress" type="email" required>
+          <input class="inputBox" id="formEmail2" placeholder="Confirm your email adress" type="email" required onfocusout="checkMail()">
         </div>
       </div>
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formCity" class="inputCategory">City</label>
-          <select class="inputBox" id="formCity" name="Cities" value="none" required>
+          <select class="inputBox" id="formCity" name="Cities" value="none" required onchange="setWeek(value)">
             <option value="" selected disabled hidden>Select city</option>
             <option value="warsaw">Warsaw</option>
             <option value="lodz">Lodz</option>
@@ -337,7 +337,7 @@
         </div>
         <div class="col-sm-6">
           <label for="formDate" class="inputCategory">Select week</label>
-          <input class="inputBox" id="formDate" placeholder="Choose the week" type="week" min="2022-W05" required>
+          <input class="inputBox" id="formDate" placeholder="Choose the city first" step="7" disabled min="2022-05-26" required>
         </div>
       </div>
       <div class="row row-cols-sm-2">
