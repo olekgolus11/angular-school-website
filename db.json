@@ -1,5 +1,8 @@
-[
-  {
-    "email": "witam@gmail.com"
-  }
-]
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Olek"
+    }
+  ]
+}
