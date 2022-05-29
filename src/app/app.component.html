@@ -291,7 +291,7 @@
 <div class="container-fluid" style="background: var(--main-blue)">
   <br><br>
   <div id="formContainer">
-    <form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+    <form action="http://localhost:3000/posts" #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)" ngNativeValidate>
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formName" class="inputCategory">First Name</label>
@@ -354,7 +354,7 @@
         </div>
       </div>
       <div style="display: flex">
-        <input id="submitButton" type="submit" value="Submit! →">
+        <input id="submitButton" type="submit" value="Submit! →" onclick="onSubmit()">
       </div>
     </form>
   </div>
@@ -375,3 +375,4 @@
   </div>
 </div>
 
+<!--json-server &#45;&#45;watch db.json-->

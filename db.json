@@ -1,0 +1,206 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server"
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 2
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 3
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 4
+    },
+    {
+      "fname": "Marcin",
+      "lname": "Gorzałka",
+      "birth": "1999-10-01",
+      "tel": "342543647",
+      "mail": "marcingorzalka@gmail.com",
+      "cities": "lodz",
+      "id": 5
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "1231-03-12",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "lodz",
+      "id": 6
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 7
+    },
+    {
+      "fname": "Bajo",
+      "lname": "Jajo",
+      "birth": "",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 8
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "birth": "",
+      "tel": "",
+      "mail": "",
+      "cities": "",
+      "id": 9
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "birth": "",
+      "tel": "",
+      "mail": "",
+      "cities": "",
+      "id": 10
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "birth": "",
+      "tel": "",
+      "mail": "",
+      "cities": "",
+      "id": 11
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 12
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "lodz",
+      "id": 13
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 14
+    },
+    {
+      "fname": "asd",
+      "lname": "asd",
+      "birth": "2004-12-29",
+      "tel": "121312341",
+      "mail": "olekgolus02@gmail.com",
+      "cities": "cracow",
+      "id": 15
+    },
+    {
+      "fname": "asd",
+      "lname": "asd",
+      "birth": "2004-12-29",
+      "tel": "121312341",
+      "mail": "olekgolus02@gmail.com",
+      "cities": "cracow",
+      "id": 16
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "warsaw",
+      "id": 17
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 18
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 19
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 20
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 21
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "lodz",
+      "id": 22
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "cracow",
+      "id": 23
+    }
+  ]
+}
