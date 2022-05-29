@@ -1,1 +1,26 @@
-
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server"
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 2
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "cities": "gdansk",
+      "id": 3
+    }
+  ]
+}

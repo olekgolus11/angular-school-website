@@ -291,31 +291,31 @@
 <div class="container-fluid" style="background: var(--main-blue)">
   <br><br>
   <div id="formContainer">
-    <form>
+    <form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formName" class="inputCategory">First Name</label>
-          <input name="fname" class="inputBox" id="formName" type="text" placeholder="Enter your first name" required>
+          <input ngModel name="fname" class="inputBox" id="formName" type="text" placeholder="Enter your first name" required>
         </div>
         <div class="col-sm-6">
           <label for="formSurname" class="inputCategory">Last Name</label>
-          <input name="lname" class="inputBox" id="formSurname" type="text" placeholder="Enter your last name" required>
+          <input ngModel name="lname" class="inputBox" id="formSurname" type="text" placeholder="Enter your last name" required>
         </div>
       </div>
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formBirth" class="inputCategory">Birthday</label>
-          <input name="birth" class="inputBox" id="formBirth" type="date" required max="2005-01-01">
+          <input ngModel name="birth" class="inputBox" id="formBirth" type="date" required max="2005-01-01">
         </div>
         <div class="col-sm-6">
           <label for="formPhone" class="inputCategory">Phone number</label>
-          <input name="tel" class="inputBox" id="formPhone" type="tel" pattern="[0-9]{9}" placeholder="123456789" required>
+          <input ngModel name="tel" class="inputBox" id="formPhone" type="tel" pattern="[0-9]{9}" placeholder="123456789" required>
         </div>
       </div>
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formEmail" class="inputCategory">Email</label>
-          <input name="mail" class="inputBox" id="formEmail" placeholder="Enter your email adress" type="email" required>
+          <input ngModel name="mail" class="inputBox" id="formEmail" placeholder="Enter your email adress" type="email" required>
         </div>
         <div class="col-sm-6">
           <label for="formEmail2" class="inputCategory">Confirm email</label>
@@ -325,7 +325,7 @@
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formCity" class="inputCategory">City</label>
-          <select class="inputBox" id="formCity" name="cities" value="none" required onchange="setWeek(value)">
+          <select ngModel class="inputBox" id="formCity" name="cities" value="none" required onchange="setWeek(value)">
             <option value="" selected disabled hidden>Select city</option>
             <option value="warsaw">Warsaw</option>
             <option value="lodz">Lodz</option>
@@ -337,7 +337,7 @@
         </div>
         <div class="col-sm-6">
           <label for="formDate" class="inputCategory">Select week</label>
-          <input name="date" class="inputBox" id="formDate" placeholder="Choose the city first" step="7" disabled min="2022-05-26" required>
+          <input ngModel name="date" class="inputBox" id="formDate" placeholder="Choose the city first" step="7" disabled min="2022-05-26" required>
         </div>
       </div>
       <div class="row row-cols-sm-2">
