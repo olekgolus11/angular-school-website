@@ -291,7 +291,7 @@
 <div class="container-fluid" style="background: var(--main-blue)">
   <br><br>
   <div id="formContainer">
-    <form action="http://localhost:3000/posts" #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)" ngNativeValidate>
+    <form action="http://localhost:3000/posts" #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value, usersForm)" ngNativeValidate>
       <div class="row row-cols-sm-2">
         <div class="col-sm-6">
           <label for="formName" class="inputCategory">First Name</label>
@@ -319,7 +319,7 @@
         </div>
         <div class="col-sm-6">
           <label for="formEmail2" class="inputCategory">Confirm email</label>
-          <input class="inputBox" id="formEmail2" placeholder="Confirm your email adress" type="email" required onfocusout="checkMail()">
+          <input ngModel name="mail2" class="inputBox" id="formEmail2" placeholder="Confirm your email adress" type="email" required onfocusout="checkMail()">
         </div>
       </div>
       <div class="row row-cols-sm-2">
@@ -354,7 +354,7 @@
         </div>
       </div>
       <div style="display: flex">
-        <input id="submitButton" type="submit" value="Submit! →" onclick="onSubmit()">
+        <button id="submitButton" type="submit">Submit! →</button>
       </div>
     </form>
   </div>
