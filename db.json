@@ -303,6 +303,36 @@
       "mail2": "marcin@gralka.com",
       "cities": "lodz",
       "id": 34
+    },
+    {
+      "fname": "Marcin",
+      "lname": "Grałka",
+      "birth": "2000-11-11",
+      "tel": "123123123",
+      "mail": "marcin@gralka.com",
+      "mail2": "marcin@gralka.com",
+      "cities": "warsaw",
+      "id": 35
+    },
+    {
+      "fname": "34567",
+      "lname": "Kaszczyk",
+      "birth": "2002-11-28",
+      "tel": "796543267",
+      "mail": "martynakaszczyk@gmail.com",
+      "mail2": "martynakaszczyk@gmail.com",
+      "cities": "lodz",
+      "id": 36
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "123123123",
+      "mail": "olekgolus02@gmail.com",
+      "mail2": "olekgolus02@gmail.com",
+      "cities": "torun",
+      "id": 37
     }
   ]
 }
