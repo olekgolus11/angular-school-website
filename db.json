@@ -333,6 +333,16 @@
       "mail2": "olekgolus02@gmail.com",
       "cities": "torun",
       "id": 37
+    },
+    {
+      "fname": "Aleksander",
+      "lname": "Golus",
+      "birth": "2002-02-11",
+      "tel": "733944220",
+      "mail": "240665@edu.p.lodz.pl",
+      "mail2": "240665@edu.p.lodz.pl",
+      "cities": "lodz",
+      "id": 38
     }
   ]
 }

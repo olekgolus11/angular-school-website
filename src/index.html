@@ -8,7 +8,6 @@
   <link rel="icon" type="image/x-icon" href="assets/blood_icon32.png">
   <script>
     document.addEventListener('scroll', reveal);
-
     function reveal()
     {
       var reveals = document.querySelectorAll(".BloodBanksInner");
@@ -71,20 +70,6 @@
         secondMail.style.borderColor = "black";
         submitButton.disabled = false;
         submitButton.value = "Submit! →";
-      }
-    }
-
-    function onSubmit()
-    {
-      if (clicked == false)
-      {
-        submitbutton = document.getElementById("submitButton");
-        submitbutton.value = "Done!";
-        clicked = true;
-      }
-      else
-      {
-        submitbutton.disabled = true;
       }
     }
   </script>
